@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ST!--Mod Training</title>
-    <link rel="stylesheet" href="dist/css/manual.css">
+    <link rel="stylesheet" href="manual.css">
 </head>
 <body>
     <div class="container">
-        <h1>
+        <h1 id="title-h">
             Welcome to Study Together! Support Team!
         </h1>
         <main>
-            <h2>
+            <h1>
                 First and Foremost
-            </h2>
+            </h1>
             <p>
                 This manual explains you the necessary commands with common examples, which you can use as a reference. Before starting, check the servers rules here: 
-                <a href="https://discordstudy.com/rules/">https://discordstudy.com/rules/</a>   
+                <a href="https://discordstudy.com/rules/" target="__blank">https://discordstudy.com/rules/</a>   
             </p>
             <p>
                 Now, as you’ll see in the Support Server (from here I’ll call it SS), there are channels with usernames. Whenever a member sends a DM to @Staff Support bot, a new thread with their names gets created. 
 When dealing with each thread, there are specific commands that are used commonly. Feel free to send a DM to Staff Support to test everything out. 
 
             </p>
-            <h3>
+            <h2>
                 Inside a user thread: 
-            </h3>
+            </h2>
             <p>
                 <strong>!r</strong>  or <strong>!reply</strong>  followed by &lt;text&gt; - Common way to send a reply to the user. The reply is sent with the nickname you have is SS.
                     <br><br><strong>!close</strong> &lt;time&gt;  -Closes the modmail thread. If a time is specified, the thread is scheduled to be closed later. Scheduled closing is cancelled if a message is sent to or received from the user.
@@ -36,9 +36,9 @@ When dealing with each thread, there are specific commands that are used commonl
                     <br><br><strong>!tag</strong> &lt;tagname&gt;  - Brings the template of called tag
             </p>
 
-            <h3>
+            <h2>
                 Anywhere on the SS:
-            </h3>
+            </h2>
             <p>
                 <strong>!newthread</strong>  &lt;userID&gt;  - Opens a new thread with the specified user
                     <strong>!logs</strong> &lt;userID&gt;&lt;page&gt;  - Lists previous modmail logs with the specified user. If there are a lot of logs, they will be paginated. In this case, you can specify the page number to view as the second argument.
@@ -55,8 +55,6 @@ When dealing with each thread, there are specific commands that are used commonl
                     <li>impropergoal</li>
                     <li>movedafk</li>
                     <li>video</li>
-                    
-                    
                 </ul>
                 <ul>
                     <li>nonstudyactivity</li>
@@ -94,17 +92,18 @@ When dealing with each thread, there are specific commands that are used commonl
 
             </p>
 
-            <h3>Now, example cases:</h3>
+            <h2>Now, example cases:</h2>
             <p>
-                Inactive stream for 3-4 minutes -> Most people do reading and note taking from a pdf file, and doesn’t show any activity. First we ask them to show activity if they’re present by using <strong>!afk</strong> &lt;@user&gt;  in the in-server screenshare/camera chat. 
-                <img src="!afk.JPG" alt="!afk">
+                Inactive stream for 3-4 minutes -> Most people do reading and note taking from a pdf file, and doesn’t show any activity. First we ask them to show activity if they’re present by using <strong>!afk</strong> &lt;@user&gt;  in the in-server screenshare/camera chat.
             </p>
+            <img src="!afk.JPG" alt="!afk">
             <p> If they don’t show any activity, or don’t react to the message within 10 minutes, that’s when we move them out of the call and message them through SS by using inactivestream template.
             </p>
             <p>
                 - Video/videosilent -> If the user’s video is not loading, we notify them with !video <@user> first and if they don’t fix it within 10m, we move them out of the call and message them.
-                <img src="!video.jpg" alt="!video">
+                
             </p>
+            <img src="!video.jpg" alt="!video">
             <p>
                 -Unmute requests -> We also get unmute requests from people. Half of the time, it’s when they use a filtered word and get muted by the bot. In some cases, the bot matches  a syllable with a filtered word (ie: cockroach), and wrongfully mutes  the person. In this case we can unmute them, and suggest them to censor the word. If it’s not a wrongful mute, then we tell them that they’ll get unmuted automatically in an hour. 
  
@@ -116,13 +115,15 @@ When dealing with each thread, there are specific commands that are used commonl
                 However, moderators doesn’t have access the data of the mute cases. And it’s not possible to confirm the way filtered word is used. Therefore it’s better to leave this to Gene, Totti and Nadir. If they are not online, you can tell the user that there’s noone online who can unmute them, and that they have to wait.
             </p>
             <p>
-                - Namechange -> This one is a bit confusing. When stats look like they got reset, it happens due to namechange. However it’s because their data is just being transferred. The user doesn’t understand the reason behind it and they say “my stats are suddenly gone”. First, we have to make sure that the reason is indeed namechange, and not another technical issue. For that, we go to the search function, and search user ID number in: #command-spam and #bots-spam. This will show us their !me profile.
-                <img src="namechange.JPG" alt="namechange">
+                - Namechange -> This one is a bit confusing. When stats look like they got reset, it happens due to namechange. However it’s because their data is just being transferred. The user doesn’t understand the reason behind it and they say “my stats are suddenly gone”. First, we have to make sure that the reason is indeed namechange, and not another technical issue. For that, we go to the search function, and search user ID number in: <span class="channels">#command-spam</span> and <span class="channels">#bots-spam</span>. This will show us their !me profile.
+                
             </p>
+            <img src="namechange.JPG" alt="namechange">
             <p>
                 And at the bottom of their profile you can see their username. 
-                <img src="changedname.JPG" alt="changedname">
+                
             </p>
+            <img src="changedname.JPG" alt="changedname">
             <p>
                 What we do is checking their past profile data and find one that shows their past correct study hours and see if the name is different. If there is indeed a name change, then we use the namechange template to answer and send it. 
                 If there is no namechange, then it’s a technical issue only Nadir can fix. In this case, we send the user a message saying we’ve forwarded the issue to the Management Team for investigation. It might be good to remind them that it might take a while due to different timezones etc.
@@ -142,11 +143,11 @@ When dealing with each thread, there are specific commands that are used commonl
             <p>
                 Banning a user: A moderator doesn’t have permissions to ban a user. <br>
                 In cases when there’s a report towards someone, first thing we do is asking for proofs, such as screenshots of said claims. <br>
-                In other cases such as a person sharing NSFW content, or flashing on camera, we first delete the post (or disconnect the person from the call), then server-mute the person in #mod-reports or in #support-team-commands (check #mod-tutorial for the commands) so that they won’t be able to text, screenshare, turn on camera or microphone. Then send the ID number/username of the person to SS and ping either Gene, Totti or Nadir, or all if none of them are online. 
+                In other cases such as a person sharing NSFW content, or flashing on camera, we first delete the post (or disconnect the person from the call), then server-mute the person in <span class="channels">#mod-reports</span> or in <span class="channels">#support-team-commands</span> (check <span class="channels">#mod-tutorial</span> for the commands) so that they won’t be able to text, screenshare, turn on camera or microphone. Then send the ID number/username of the person to SS and ping either Gene, Totti or Nadir, or all if none of them are online. 
 
             </p>
             <p>
-                This is more or less all. You can always ping any of us while handling a thread and ask questions. When there are unique questions and if you know the answer, such as “what is cuckoo-forest”, you can send them the FAQ (<a href="https://discordstudy.com/faq/">https://discordstudy.com/faq/</a>), or explain the answer as it is.  
+                This is more or less all. You can always ping any of us while handling a thread and ask questions. When there are unique questions and if you know the answer, such as “what is cuckoo-forest”, you can send them the FAQ (<a href="https://discordstudy.com/faq/" target="__blank">https://discordstudy.com/faq/</a>), or explain the answer as it is.  
             </p>
         </main>
     </div>
